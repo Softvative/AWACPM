@@ -19,3 +19,14 @@ For all other servers, including the original lead host, run with the -MachineTo
         -SetAsLeadHost $false -MachineToJoin wac02.example.com
 
 A process flow diagram is available from the [Wiki](https://github.com/Nauplius/AWACPM/wiki/Process-Diagram).
+
+Parameters:
+
+    -SetAsLeadHost $true 
+Indicates this is the first server of the new farm.
+    
+    -ConfigurationFile
+Indicates the location of the configuration file to export/import. Must be a valid path to a folder.
+    
+    -MachineToJoin
+The fully qualified domain name of an existing WAC/OOS machine to join.
