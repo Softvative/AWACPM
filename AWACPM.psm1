@@ -177,7 +177,7 @@ function Start-OfficeWebAppsPatch
         New-OfficeWebAppsFarm @parms
         Write-host -ForegroundColor Green 'Completed creating farm.'
         Write-Host -ForegroundColor Green 'Setting Office Web Apps Machine Roles.'
-        Get-MachineXml
+        $machine = Get-MachineXml
         Set-OfficeWebAppsMachine -Roles $machine.Roles
         Write-Host -ForegroundColor Green 'Completed setting machine roles.'
     }
